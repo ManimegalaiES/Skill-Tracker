@@ -1,0 +1,68 @@
+/* Filter Dropdown Styling */
+.tasks-filters {
+  display: flex;
+  gap: 20px;
+  background-color: #f7e8ff;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px 0;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: bold;
+}
+
+.filter-group label {
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.filter-group select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  font-size: 14px;
+  background-color: #fff;
+  transition: border-color 0.3s;
+}
+
+.filter-group select:focus {
+  border-color: #6a11cb;
+  outline: none;
+}
+
+/* Priority Badge Styling */
+.priority-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.priority-badge.low {
+  background-color: #00b894;
+}
+
+.priority-badge.medium {
+  background-color: #fdcb6e;
+  color: #333;
+}
+
+.priority-badge.high {
+  background-color: #d63031;
+}
+
+.filter-group select:hover {
+  cursor: pointer;
+  border-color: #9b59b6;
+}

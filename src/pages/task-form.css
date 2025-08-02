@@ -1,0 +1,118 @@
+.task-form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffffcc;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  animation: fadeInUp 0.5s ease;
+}
+
+.task-form-container h2 {
+  text-align: center;
+  color: #4a00e0;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #6a11cb;
+}
+
+.checkbox-group {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.save-button,
+.delete-button,
+.cancel-button {
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 5px;
+}
+
+.save-button {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+}
+
+.save-button:hover {
+  opacity: 0.9;
+}
+
+.delete-button {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #e60000;
+}
+
+.cancel-button {
+  background-color: #aaa;
+  color: white;
+}
+
+.cancel-button:hover {
+  background-color: #888;
+}
+
+.error-message {
+  background-color: #ffe6e6;
+  color: #cc0000;
+  padding: 12px;
+  border-left: 4px solid #cc0000;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
